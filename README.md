@@ -1,10 +1,9 @@
 ````markdown
-# PulmoGrad: Reproducible ML Workflow for COPD Severity *(Everything is empty until a decision)*
+# PulmoGrad: Reproducible ML Workflow for COPD Severity (Everything is empty until a decision)
 
 ## What it is
-Leakage-safe, imbalance-aware COPD severity pipeline (**ADASYN** in-train, **nested CV** with Hyperopt, **RF/XGB/LGBM/CatBoost**, **soft-voting ensemble**, probability **calibration**, **ROC/PR/Calibration** curves, **SHAP**, per-fold metrics, and complete **OOF probabilities** for supplements).
+Leakage-safe, imbalance-aware COPD severity pipeline (ADASYN in-train, nested CV with Hyperopt, RF/XGB/LGBM/CatBoost, soft-voting ensemble, probability calibration, ROC/PR/Calibration curves, SHAP, per-fold metrics, and complete OOF probabilities for supplements).
 
----
 
 ## Quick start
 ```bash
@@ -28,8 +27,6 @@ python -m pulmograd.cli fit --config configs/default.yaml
 python -m pulmograd.cli report --config configs/default.yaml
 ````
 
----
-
 ## Repository layout
 
 ```
@@ -52,8 +49,6 @@ PulmoGrad/
    ├─ logs/
    └─ models/
 ```
-
----
 
 ## Minimal configuration
 
@@ -115,8 +110,6 @@ outputs:
   figures_dir: outputs/figures
 ```
 
----
-
 ## What you get after `fit`
 
 **`outputs/tables/`**
@@ -135,7 +128,6 @@ outputs:
 * *Supplementary Figure S1–S5*: per-fold ROC for RF/XGB/LGBM/Cat/Ensemble
 * Precision–Recall curves, calibration plots, SHAP (summary & dependence), confusion matrices
 
----
 
 ## Data schema & privacy
 
@@ -145,7 +137,6 @@ outputs:
 * `group_id` *(optional)*: ensures no patient overlap across folds
 * **Privacy**: de-identify all data; **do not** upload raw PHI
 
----
 
 ## Validation notes
 
@@ -153,7 +144,6 @@ outputs:
 * Reported performance is from **outer** held-out folds only (unseen test).
 * OOF probabilities are exported to enable independent re-scoring and figure regeneration.
 
----
 
 ## Citation
 
@@ -168,12 +158,10 @@ If this repository helps your work, please cite:
 }
 ```
 
----
 
 ## License & disclaimer
 
 **MIT.**
 Not a medical device. Research use only; do not use for autonomous clinical decision-making.
 
-```
 ```
