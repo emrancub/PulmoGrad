@@ -113,7 +113,7 @@ outputs:
 
 **`outputs/tables/`**
 
-* `outer_fold_metrics.csv` — per-fold metrics + mean ± SD; 95% CI via bootstrap
+* `outer_fold_metrics.csv` — per-fold metrics + mean ± SD
 * `thresholds.csv` — VAL-optimized & clinical thresholds
 
 **`outputs/probs/`** *(for supplements)*
