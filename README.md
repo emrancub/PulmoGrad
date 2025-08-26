@@ -1,4 +1,3 @@
-````markdown
 # PulmoGrad: Reproducible ML Workflow for COPD Severity (Everything is empty until a decision)
 
 ## What it is
@@ -152,7 +151,7 @@ If this repository helps your work, please cite:
 ```bibtex
 @software{PulmoGrad_2025,
   title  = {PulmoGrad: Reproducible ML Workflow for COPD Severity},
-  author = {Your Name and Contributors},
+  author = {Md Emran Hasan and Dong-Jun Yu },
   year   = {2025},
   url    = {https://github.com/emrancub/PulmoGrad}
 }
